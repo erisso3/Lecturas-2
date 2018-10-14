@@ -1,269 +1,255 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\title{Ejercicios de Grimaldi}
-\author{Echverría Celaya Erick Mitchell}
-\date{Agosto 2018}
-
+\title{Ejcicios de Grimaldi}
+\author{AUTOR }
+\date{October 2018}
 \usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{color}
 \begin{document}
-
 \maketitle
-\section{Capitulo 1}
-\subsection{Problema 1}
-A)El consejo directivo de una empresa farmacéutica tiene 10 miembros. Se ha programado una próxima reunión de accionistas para probar una nueva lista de ejecutivos (elegido entre los 10 miembros del consejo). ¿Cuantas listas diferentes formadas por un presidente, un vicepresidente, un secretario y un tesorero puede presentar un consejo a los accionistas para su aprobación?\\\\
-Respuesta:Como busca diferentes formas de escoger la lista podemos pensar que de los 10 miembros se elije uno y quedan 9, luego elijen a otro y queda 8 y escogen al ultimo y quedan 7 podemos expresarlo como 10 x 9 x 8 x 7 = 5040 ó pensemos una permutacion P(10/4) = 5040\\\\
-B)3 miembros del consejo de directores ( de la parte a) son médicos. ¿Cuantas listas de la parte(a) tiene\\
-I) Un médico nominado para la presidencia?\\
-II) Exactamente un médico en la lista?\\
-III) Al menos un médico en la lista?\\\\
-Respuesta I: Como al menos 1 médico está nominado tomemos en cuenta a los 3 y usando que de 3 posibles resulta uno entonces de los 10 se resta 1 que ya sería el presidente entonces la expresión resulta 3 x 9 x 8 x 7 = 1512.\\\\
-Respuesta II:Al menos un médico está dentro, entonces la expresión resulta 4 x [ 3 x 7 x 6 x 5] = 2520\\\\
-Respuesta III:Como tenemos 3 médicos y al menos uno está podemos descartar 3 personas de las 10, lo cual buscamos la permutacion de P(7/4)=840 que seria la probabilidad de los restantes sin ser medicos, por lo que a la probabilidad donde puede ser nombrado, restemos donde no lo es: 5040-840= 4200.\\\\
-\subsection{Problema 2}
-Un sábado, cuando iba de compras, Juana y Teresa vieron a 2 hombres alejándose en un automóvil de la fachada de una joyería, justo antes de que sonara una alarma contra robos. Aunque todo ocurrió muy rápido, cuando fueron interrogados las dos jóvenes, pudieron dar a la policía la siguiente información acerca de la placa (Consta de dos letras seguidas de 4 dígitos) del automóvil que huyó. Teresa estaba segura de que la segunda letra de la placa era una O o una U, y que el último dígito era un 3 o 8. Juana dijo que la primera letra de la placa era una C o una G y que el primer dígito era definitivamente un 7. ¿Cuántas placas diferentes tendrá que verificar la policia?\\\\
-Respuesta:Usamos  la regla de producto encontramos que 2 x 2 x 1 x 10 x 10 x 2= 800 diferentes placas 
-\\\\
-\subsection{Problema 3}
-Con el fin de juntar fondos para una nueva alberca municipal la cámara de comercio de cierta ciudad patrocina una carrera. Cada participante paga una cuota de inscripción de 5 pesos y tiene la probabilidad de ganar uno de los trofeos de distinto tamaño que se entrega a los primeros 8 corredores que llegan a la meta.\\\\
-A)Si 30 personas entraron a la carrera, ¿ cuántas formas serán posibles entregar los trofeos?\\\\
-Respuesta:Si son un total de 30 y solo 8 llegan, podemos pensar en una permutación que su valor o expresión resulta así P(30/8)\\\\
-B)Si Roberta y Clara son dos participantes en la carrera, ¿De cuantas formas se pueden entregar los trofeos del modo que ellas queden entre los tres primeros lugares?\\\\
-Respuesta:como ya se sabe que 2 personas resultan en un lugar de la carrera, entonces 30 individuos que eran - 2 que ganan queda un total de 28, y de los 8 ganadores ya se saben de 2 entonces 8-2=6
-entonces la combinación resulta P(28,6)
-\\\\
-\subsection{Problema 4}
-Un anuncio de hamburguesas indica que un cliente puede ordenar su hamburguesa con alguno, con ninguno de los siguientes ingredientes o con todos los ingredientes:
--catsup, mostaza, mayonesa, lechuga, tomate, cebolla, pepinillos, queso, o champiñones. 
-¿Cuantas ofertas diferentes se pueden servir?\\\\
-Respuesta: Como tenemos 3 opciones y 9 ingredientes, planteamos que se trata de una permutación para saber las combinaciones de los ingredientes con los casos, por lo tanto, P(9/3)=504 posibles\\\\
-\subsection{Problema 5}
-Durante el dia se envian 12 programas por un sub procesamiento por lotes de cuántas formas se pueden ordenar el procesamiento de estos programas si no existen restricciones.\\\\
-Respuesta:Como no hay restricciones podemos considerar de los 12 programas una permutación de ella misma o un factorial para saber las posibles combinaciones, por lo tanto, 12! = 4790001600 posibles ordenamientos del proceso\\\\
-\subsection{Problema 6}
-Pamela tiene 15 libros distintos, ¿De cuántas formas puede colocar sus libros en 2 repisas, de modo que haya al menos un libro en cada repisa?\\\\
-Respuesta:De los 15 libros tenemos 2 repisas, por lo que descartamos que haya una misma cantidad de libros en las dos repisas, lo que nos da una permutación de P(15/2)=210 maneras de ordenar\\\\
-\subsection{Problema 7}
-Evalúe cada uno de los siguientes casos:\\\\
-A)P(7,2)\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>B)P(8,4)\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>C)P(10,7)\\\\
-Respuesta:\>\>A)42\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>B)604800\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>C)1320\\\\
-\subsection{Problema 8}
-De cuántas formas es posible ordenar los símbolos a,b,c,d,e,e,e,e,e, de forma que ninguna se quede junta a la otra sin repetir los casos.\\\\
-Respuesta:Podemos apoyarnos separando e _ e _ e _ e _ e , por lo tanto solo se necesitaria saber las posibles combinaciones de las demás letras, así que: 4!=24.
-\\\\
-\subsection{Problema 9}
-Para la transmisión de mensajes en un sistema de comunicación se usa un alfabeto de 40 símbolos. ¿Cuántos mensajes distintos de 25 símbolos pueden generar el transmisor si los símbolos se puede repetir en el mensaje?\\\\
-Respuesta:De 40 símbolos se quiere usar 25 para generar el transmisor, por lo tanto las posibles opciones de usar los 40 símbolos en 25 mensajes es P(40/25).\\\\
-\subsection{Problema 10}
-Que nombre de estado implica más disposiciones de letras de su nombre Pennsylvania o massachusetts.\\\\
-Respuesta:p=12!/(3!)(2!)=39 916 800 posibilidades \\
-m=13!/(4!)(2!)(2!)=64 864 800 posibilidades
-\\\\
-\section{Capitulo 2}
-\subsection{Problema 1}
-sean p,q,r las proporciones para un triángulo abc particular; p: el triángulo abc es isósceles; q: el  triángulo abc es equilátero;q: el triángulo abc es equiángula. traduzca las siguiente frases a español\\\\
-q->p\\
-p->q\\
-r->p\\
-q<>r\\\\
-Respuesta:Si el triangulo abc es equilatero, entonces es isósceles 
-  b) si el triángulo ABC no es isósceles, entonces no es equilátero \\\\
-\subsection{Problema 2}
-determine si cada una de las sentencias es una declaración 
-en 2003 George w.Bush fue el presidente de E
-x+3 es un entero positivo
-15 es un número par 
-que hora es?\\\\
-
-Respuesta:(a),(c),(d) son declaraciones, (b) no es una declaración \\\\
-\section{Problema 3}
-De cuántas maneras se puede colocar la palabra VISITING\\\\
-Respuesta La palabra Visiting está conformada por 8 letras pero paras saber la cantidad de maneras de colocar necesitamos identificar las letras repetidas, que en este caso es i, entonces realizamos la siguiente operación : 8!/3!=6720 maneras distintas
-\\\\
-\subsection{Problema 4}
-Demuestre, o demuestre que es falso: existen enteros positivos y m,n son cuadrados perfectos, entonces m+n es un cuadrado perfecto
-\\\\
-Resultado:esto en general no es verdad, pues m=4² y n=1² entonces m+n= 5 y 5 no es un cuadrado perfecto\\\\
-
-\subsection{Problema 5}
-Calcula (6/2) y verifique su respuesta enumerando todas las elecciones del tamaño 2 que se puede hacer en las letras a,b,c,d,e\\\\
-Respuesta:\\En este caso es necesario usar la combinación donde el orden no se repite, entonces 6C2=15, y verificamos:\\
-a,b\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>b,c\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>c,e\\   
-a,c\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>b,d\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>c,f\\            
-a,d\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>b,e\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>d,e \\         
-a,e\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>b,f\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>d,f \\   
-a,f\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>c,d\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>e,f \\ 
-\\\\
-\subsection{Problema 6}
-Como Diana debe hacer un viaje de 4 horas en autobús de regreso a su escuela, decide llevar consigo 5 revistas de las 12 que su hermana acaba de adquirir, de cuántas formas puede Diana hacer sus elecciones\\\\
-Respuesta:Se trata de una combinación, de tal modo que el orden y que no se repita si importa, por lo tanto, 12C5= 792 .: donde C significa combinación.
-\\\\
-\subsection{Problema 7}
-sea p(x), q(x) las siguientes proposiciones abiertas:\\\\
-p(x) x <= 3  \\ q(x): x+1\\\\
-Es impar si el universo consta de todos los enteros x. ¿cuales son los valores de verdad de las siguientes proposiciones?\\\\
-p(1)\\\\
-q(1)\\\\
-Resultado: a) P(3)V(Q(3) V ~ R(3)) -> 3<=3, es verdadera dado que 3 es igual o idéntico que 3, si evaluamos en 3+1=4, comprobamos que la proposición es falsa puesto que 4 no es un número primo, tanto que 3>0  es verdadero, pero como se pide la negación, esto automáticamente se convierte en falso.\\\\
-      b)  ~P(3){(Q(3) V ~ R(3))} -> 3<=3, esta preposición si es verdadera dado que 3=3, pero la negación nos dice que 3+1= 4, por lo que es falsa, pues 4 no es un numero primo, 3>0 es verdadero dado que 3 es mayor que 0,, pero el paréntesis dice que ( falso V verdadero= a verdadero.\\\\
-
-\subsection{Problema 8}
-Evalúe cada uno de los siguientes casos:\\\\
-A)C(10,4)\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>B)P(12/7)\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>C)C(14,12)\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>D)(15/10)\\\\
-Respuesta:A)210\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>B)792\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>C)91\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>D)3003\\\\\\\\
-\subsection{Problema 9}
-Enumera todas las combinaciones de tamaños 3 que resultan de las letras M,R,A,F,I,T.\\\\
-Respuesta:Como son 5 letras y nos piden formar palabras de tamaño de 3 letras, entonces usamos una combinación para no repetir agrupamiento, 5C3 = 10 formas o palabras\\\\
-\subsection{Problema 10}
-¿De cuántas formas se puede formar un equipo de baloncesto de 5 personas con 12 posibles jugadores?\\\\
-Respuesta:Usaremos una combinación de tal modo que cada equipo sea diferente, 
-12C5 =792
-Ahora para el mas fuerte y débil los sacamos de la cantidad de jugadores y posibles personas del equipo quedando, 10C3 = 120
-\\\\
-\section{Capitulo 3}
-\subsection{Problema 1}
-Para A={1,2,{2}},¿cuales de las ocho proposiciones del ejercicio 2 son verdaderas?\\\\
-Respuesta:Todas las opciones son verdaderas excepto la (b) y (d), porque ahora ya no tiene {1} el conjunto de A\\\\
-\subsection{Problema 2}
- Escriba las siguientes tres filas del triángulo de pascal.\\\\
-Respuesta: el triángulo a continuación\\\\
-\\\\\\\\
-
-\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\\
-
-\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\\
-
-\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>2\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\\
-
-\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>3\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>3\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\\
-
-\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>4\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>6\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>4\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\\
-
-\>\>\>1\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>5\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>10\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>10\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>5\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>1\\\\
-
-\subsection{Problema 3}
-Para U={1,2,3……,10} sean A={1,2,3,4,5}, B={1,2,3,4,8}, C={1,2,3,5,7} y D={2,4,6,8}.\\ Determine lo siguiente:\\\\
-
-(A U B)∩C\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>b) A U (B∩C)
-\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>c) C´ U D´
-\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>d) C∩D
-\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>\>e) (AUB)-C\\
-
-f) AU(B-C)\>\>\>\>\>\>\>\>\>\>\>\>g) (B-C)-D
-\>\>\>\>\>\>\>\>\>\>\>\>h) B-(C-D)
-\>\>\>\>\>\>\>\>\>\>\>\>i) (AUB)-(C∩D)
-\\\\
-Respuesta:\\
-a){1,2,3,5}\>\>\>\>\>\>\>\>\>\>\>\> b)El subconjunto A \>\>\>\>\>\>\>\>\>\>\>\>c) U{2} todos menos el 2\\\\\>\>\>\>\>\>\>\>\>\>\>\>d) U{2} todos menos el 2 \>\>\>\>\>\>\>\>\>\>\>\>e) {4,8}\>\>\>\>\>\>\>\>\>\>\>\>f){1,2,3,4,5,8}\>\>\>\>\>\>\>\>\>\>\>\>g)0\>\>\>\>\>\>\>\>\>\>\>\>h){2,4,8}\>\>\>\>\>\>\>\>\>\>\>\>i){1,3,4,5,8}\\\\
-
-\subsection{Problema 4}
-Sea S={1,2,3,.......,39,30} ¿Cuántos subconjuntos A de S satisfacen\\
-|A|=5?\\
-|A|=5 y que el mínimo elemento de A sea 5?\\\\
-Respuesta:Podemos expresarlo como (30/5)
-dado que el elemento más pequeño en A es 5, debemos seleccionar los otros cuatro elementos en A de (25/4) es 4 porque ya se tiene un elemento que es 5\\\\
-
-\subsection{Problema 5}
-¿Cuáles de los siguientes conjuntos son iguales?\\\\
-
-a(1,2,3)\>\>\>\>\>\>\>\>\>\>\>\>b(3,2,1,3)\>\>\>\>\>\>\>\>\>\>\>\>c(3,1,2,3)\>\>\>\>\>\>\>\>\>\>\>\> c(1,2,2,3)\\\\
-Respuesta:Todos corresponden al mismo conjunto,\\puesto que aunque se repitan algunos números, no salen del rango de números.\\\\
-
-\subsection{Problema 6}
-Para A={1,2,{2}},¿cuales de las ocho proposiciones del ejercicio 2 son verdaderas?\\\\
-Respuesta:Todas las opciones son verdaderas excepto la (b) y (d), porque ahora ya no tiene {1} el conjunto de A\\\\
-\subsection{Problema 7}
-Dé un ejemplo de tres conjuntos W,X,Y tales que W ∈ X y X ∈ Y pero W ∉ Y.\\\\
-Tenemos el Universo \\\\
-Respuesta: Expresar los conjuntos como: W={1}, X={{1},2}, Y={X,3}, así W pertenece a X, y X pertenece a Y pero W no está dentro de Y directamente.\\\\
-
-\subsection{Problema 8}
-¿Cuáles de las siguientes proposiciones son verdaderas?\\\\
-a)0∈0\>\>\>\>\>\>\>\>\>\>\>\>b) 0⊂0\>\>\>\>\>\>\>\>\>\>\>\>c) 0⊆0
-      \\\\d) 0∈{0}   \>\>\>\>\>\>\>\>\>\>\>\>e) 0⊂{0}           \>\>\>\>\>\>\>\>\>\>\>\>      f)  0⊆{0}
-\\\\Respuesta:Todas son verdaderas excepto la (a) y (b)\\ porque en todas las demás usan referencia al conjunto con {0},\\y en el caso de (c) el símbolo dice que todos los elementos de 0 es elemento de 0.\\\\ 
-\subsection{Problema 9}
-Para los conjuntos A,B,C ⊂ U,demuestre  la verdad o falsedad de lo siguiente: Si A ⊂ B,B ⊄ C, entonces A ⊄ C.\\\\
-Respuesta: Falsedad, expresemos A={1}, B={1,2} y C={1,3}\\\\
-
-\subsection{Problema 10}
-Para U=Z, sea A ⊆ U el conjunto A={1,2,3,4,5,7,8,10,11,14,17,18}.\\\\
-¿Cuántos subconjuntos de A contiene seis elementos?\\\\
-¿Cuántos subconjuntos de seis elementos (de A) contienen cuatro enteros pares y dos enteros impares?\\\\
-Respuesta:
-Hacemos una combinación  ya que no importa el orden, por tanto sería 12C6=924
-Se tienen que realizar dos combinaciones: 6C4 que son la cantidad de elementos y  pares que pide, y 6C2 que son los impares, 6C4= 15  y 6C2= 15, entonces nos pide todos los subconjuntos, por tanto, 15 x 15= 225\\\\
-
-\section{Capitulo 4}
-\subsection{Problema 1}
-Sean a, b y c tres números enteros tales que a | bc, ¿ es cierto que a | b o que a | c? ¿ Y si a es primo? \\\\
-Respuesta:Si a es cualquier entero, la respuesta es que no. Basta tomar a = 6, b = 10 y c = 15. Se tiene que 6 | 150 pero 6 no es un divisor de 10 ni de 15. Si a es primo, s´ı se verifica ya que, en ese caso el m´aximo com´un divisor mcd(a, b) es 1 o a, que son los únicos divisores positivos que tiene a. Si mcd(b, a) = 1, entonces 1 = bx + ay (para ciertos enteros x, y) y c = bxc + ayc = aqx + ayc (si bc = aq), con lo que a | c. Por otro lado, si mcd(b, a) = a, entonces a | b.
-\\\\
-\subsection{Problema 2}
-Resuelve en C la ecuación x² − x¯ = 0.\\\\
-Resultado:
-x = a + b ·i. \\
-(a + b · i)(a + b · i) = a − b · i, \\
-es decir:\\
- (a² − b² ) + 2ab · i = a − b · i, \\
-a² − b² = a y 2ab = −b. \\
-b = 0, a² = a, es decir, a = 0 o a = 1. \\
- x1 = 0 y x2 = 1. \\
-b!= 0, entonces a = −1/2. De este modo, se tiene que 1/4 − b²= −1/2 o b² = 3/4. Tomando b = ± √ 3/2, se obtienen las otras dos soluciones que vienen dadas por: x3 = −1/2 + √ 3/2 · i = 1± 2π/3 x4 = −1/2 + − √ 3/2 · i = 1± 4π/3.\\\\
-
-\subsection{Problema 3}
-Si A = (1, 2) ⊆ R y B = (2, 3) ⊆ R, determina A, B, A ∪ B, A ∩ B y A ∪ B.\\\\
-Respuesta:\\
-A = (−∞, 1] ∪ [2, +∞) y B = (−∞, 2] ∪ [3, +∞). \\
-A ∪ B = (1, 3) y luego A ∪ B = (−∞, 1]∪[3, +∞). \\
- A∩B = (−∞, 1] ∪ [3, +∞). \\
-A ∩ B = ∅ = R y, finalmente A ∪ B = A ∩ B = R\\\\
-
-\subsection{Problema 4}
-Dados los siguientes números, indica cual es el menor de los conjuntos de n´umeros (entre N, Z, Q y R) que lo contiene: −3, 2, √ 4, −10/ 2 , 8 /9 , 1´42, 0´454, √ 5, √−8, π. \\\\
-Respuesta:\\\\
-Tenemos que −3 ∈ Z, 2 ∈ N, √ 4 = 2 ∈ N ( o √ 4 = −2 ∈ Z), −1´2 = −5 ∈ Z, 8 9 ∈ Q, 1´42 ∈ Q, 0´454 ∈ Q, √ 5 ∈ R, √3 −8 = −2 ∈ Z y π ∈ R.\\\\
-
-\subsection{Problema 5}
-Para a,b Z+y d= mcd (a,b), demuestre que mcd (ald, bld)=1.\\\\
-Respuesta:\\
-R= gcd(a,b)=d d=ax +by, para algunos x,y Z. gcd(a,b)=d a/d,b/d Z. 1 =(a/b)x + (b/d)y  gcd(a/d/b/d)=1\\\\
-
-\subsection{Problema 6}
-Demuestre los siguiente mediante inducción matemática\\\\
-Respuesta:\\
-1²+3²+5²+.....+(2n-1)²= (n)(2n-1)(2n+1)/3
-r.- s(k)= 1²+3²+5²+.....+(2k-1)²=(k)(2k-1)(2k+1)/3 para k>=1; consideramos S(k+1). [1²+3²+..+(2k-1)² ]+(2k+1)²= [(k)(2k-1)(2k+1)/3]+(2k+1)²= (k+1)(2k+1)(2k+3)/3 asi que s(k)= s(k+1) por lo que nz⁺\\\\
-
-\subsection{Problema 7}
-Para cada uno de los pares siguientes a,b  Z+, determine mcd (a,b) y expréselo como una combinación lineal de a,b. \\\\ 
-231,1820 \\
-1369,2597\\
-2689,4001 \\
-7982,7983\\
-\\\\
-Respuesta:\\ 
-a)1820 = 7(231) + 203		231 = 1(203) + 28		203 = 7(28) + 7		28= 7(4), entonces gcd(1820,23)=7 		7=203-7(28)=203-7[231-203]=(-7)(231) + 8(203) = (-7)(231) + 8[1820 - 7(231)] = 8 (1820)+(-63)(231)\\\\
-b)gcd(1369,2597) = 1 = 2597 (534) + 1369(-1013)\\\\
-c)gcd (2689,4001) = 1 = 4001 (-1117) + 2689(1662)\\
-
-\subsection{Problema 8}
- Demuestra que, si p es un n´umero primo, √p es irracional.\\\\
- Respuesta:\\
-Supongamos que √p ∈ Q y, por lo tanto, existen m, n naturales tales que mcd(m, n) =1 y  √p = m/n.\\
- Como, al elevar al cuadrado, obtenemos que m² = p · n² ,\\
-se deduce que p | m² y, como p es primo, se tiene que p | m es decir m = p·q. \\
-Sustituyendo en la expresión anterior, se obtiene que p²· q² = p · n², con lo que p · q² = n 2 , es decir p | n² y, de nuevo p | n. Hemos llegado a una contradicción porque entonces\\ mcd(m, n) 6!=1 al haber demostrado que p es un divisor común de m y n.\\\\
-
-\subsection{Problema 9}
-Calcula (1 + i)⁷ + 4(1 + i)³\\\\
-Respuesta:\\
-Pongamos 1 +i. en forma polar. Est´a claro que 1 +i = 2/ π/4 . De este modo: (1 + i) 3 = √ 2 3 ± 3π/4 = 2√ 2 ± 3π/4 , y (1 + i) 7 = √ 2 7 ± 7π/4 = 8√ 2 ± 7π/4 . Puesto que cos( 3π/4) = −1, sen( 3π/4) = 1, cos( 7π/4) = 1 y sen( 7π/4) = −1, se deduce que: 64 (1 + i) 7 + 4(1 + i) 3 = 8√ 2(1 − ·i) + 8√ 2(−1 + ·i) = 0. \\\\
-
-\subsection{Problema 10}
-a) Determine los conjuntos A,B cuando A-B={1,3,7,11}, B-A={2,6,8} y A∩B={4,9}\\
- b) Determine los conjuntos C,D, donde C-D={1,2,4}, D-C={7,8} y CUD={1,2,4,5,7,8,9} \\
-Respuesta: \\\\
-A={1,3,4,7,9,11}\>\>\>\>\>\>\>\>\>\>\>\>y\>\>\>\>\>\>\>\>\>\>\>\>B={2,4,6,8,9}\\\\
-C={1,2,4,5,9}\>\>\>\>\>\>\>\>\>\>\>\>y\>\>\>\>\>\>\>\>\>\>\>\>D={5,7,8,9
+\section{Capitulo 5}Relaciones y funciones.\\
+1.  Si $\mu =N, A=(1,2,3,4), B=(2,5) y C=(3,4,7),$Determine AXB; BXA;\\
+\textcolor{red}{Respuesta:\\AXB:\\
+$
+\left(\begin{smallmatrix}
+(1,2),(1,5),(2,2),(2,5),(3,2),(3,5),(4,2),(4,5)
+\end{smallmatrix}\right)
+$\\
+BXA:\\
+$
+\left(\begin{smallmatrix}
+(2,1),(2,2),(2,3),(2,4),(5,1),(5,2),(5,3),(5,4)
+\end{smallmatrix}\right)
+$
 }\\
+2. Con los valores anteriores determine (AUB)XC\\
+\textcolor{red}{Respuesta:\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$
+}\\
+3. Determine (AXC)U(BXC) con los valores anteriores.\\
+\textcolor{red}{Respuesta:\\
+AXC:\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7)
+\end{smallmatrix}\right)
+$\\
+BXC:\\
+$
+\left(\begin{smallmatrix}
+(2,3),(2,4),(2,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$\\
+(AXC)U(BXC):\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$
+}
+4. Si $\mu = (1,2,3,4,5) , A=(1,2,3) y B=(2,4,5)$ de ejemplos de tres relaciones no vacías de A en B.\\
+\textcolor{red}{Respuesta:\\AXB:\\
+$
+\left(\begin{smallmatrix}
+(1,2),(1,4),(1,5)
+\end{smallmatrix}\right)
+$
+}\\
+5. Si $\mu = (1,2,3,4,5) , A=(1,2,3) y B=(2,4,5)$ de ejemplos de tres relaciones binarias no vacías en A.\\
+\textcolor{red}{Respuesta:\\
+$
+\left(\begin{smallmatrix}
+(1,1),(1,2),(1,3)
+\end{smallmatrix}\right)
+$
+}\\
+6. Sea $A=(1,2,4,8,16) y B=(1,2,3,4,5,6,7) si (2-x,5),(4,y-2) \epsilon AXB,$¿Se cumple que $(2-x,5)=(4,y-2)$?\\
+\textcolor{red}{Respuesta:\\se igualan las coordenadas\\$2-x=4 y 5=y-2\\2-4 , 5+2=y\\-2=x , 7=y;$ por lo tanto se cumple para $x=-2 y y=7$
+}\\
+7. Sea $A_1=(0,1,2,3,n),A_2=(1,2,3,7,12),A_3=(0,1,2,4,8,16,32) y A_4(-3,-2,-1,0,1,2,3)$\\Sea $R_1 \leq A_1 X A_2 X A_3 X A_4 donde R_1=(w,x,y,z)$ ¿Cuantos $4-uplas$ ordenadas o cuaternas hay en una relación?\\
+\textcolor{red}{Respuesta:\\$WXYZ= 0$ si y solo si por lo menos uno de los 4 números son 0, entonces se agarra los pares con una coordenada 0, por lo tanto el resultado es de $196+5(4)=216$
+}\\
+8. Sea $A_1=(0,1,2,3,n),A_2=(1,2,3,7,12),A_3=(0,1,2,4,8,16,32) y A_4(-3,-2,-1,0,1,2,3)$\\SI $2_2 \subset A_1 X A_2 X A_3 X A_4$ es la relación cuaternaria donde $(a,b,c,d \epsilon R_2)$ si x solo si abcd $\prec 0$ ¿Cuánto vale $R_2$\\
+\textcolor{red}{Respuesta:\\
+En este caso es similar al anterior como en el conjunto $A_4$ existe 3 números negativos entonces seria $72(4)=288$
+}\\
+9. Para cuales conjuntos A,B,C $\mu$ es verdadero $AXB=BXA$\\
+\textcolor{red}{Respuesta:\\
+$AXB=BXA si y solo si A=B$
+}\\
+10. Si $\mu=\re$, haya un esquema de la relación $((x,y) y x^2+y^2=4)$¿Qué sucede si U es $\re+$?\\
+\textcolor{red}{Respuesta:\\
+$x^2+y^2$ es una ecuación de la circunferencia con centro en el origen y radio de 2, por lo tanto se se toma los reales positivos, se generaría un semicírculo.
+}
+\section{Capitulo 6}Lenguajes: Máquinas de estados finitos.\\
+1. Sea A= (10,11), B(00,1) lenguajes para el alfabeto sumatoria = (0,1) determine lo siguiente:
+a) AB\\
+b) BA \\
+c) $A^3$\\
+d) $B^2$ \\ 
+\textcolor{red}{Respuesta:\\
+a) AB = (1000,101,1100,111)\\
+b) BA = (0010,0011,110,111) \\
+c) $A^3$ = (101010,101011,101110,111010,101111,111011,1111110,111111)\\
+d) $B^2$ = (0000,001,100,11)
+}\\
+2. Para el alfabeto sumatoria =(0,1), sean A, B, C $\subseteq$ sumatoria los siguientes lenguajes:
+A= (0, 1, 00, 11, 000, 111, 0000, 1111),\\
+B= (w $\in$ sumatoria 2 $\leq$ w)\\
+C= (w $\in$ sumatoria 2 $\geq$ w)
+Determine los siguientes subconjuntos(lenguajes) de sumatoria\\
+a) A $\cap$ B\\
+b) A - B \\
+c) A $\bigtriangleup$ B\\
+d) A $\cap$ C \\ 
+e) B $\cap$ C \\
+f) B $\cup$ C 
+\\
+\textcolor{red}{Respuesta:\\
+a) (00,111,000,111,0000,1111)\\
+b) (0,1) \\
+c) sumatoria* -($\lambda$,00,11,000,111,0000,1111)\\
+d) (0,1,00,11) \\ 
+e) sumatoria* \\
+f) sumatoria* - (0,1,00,11)= ($\lambda$,01,10) $\cup$ ( w $\geq$ 3 )
+}\\
+3. Sea sumatoria de (a, b, c, d, e)\\
+a) ¿Cuánto vale al cuadrado y al cubo \\b) ¿Cuántas cadenas de la sumatoria tienen una longitud de al menos cinco? \\ 
+\textcolor{red}{Respuesta(a):\\(a) sumatoria= (a, b, c, d, e) 
+son 5 letras, entonces $(5)^2= 25$; $(5)^3 = 125$ \\ 
+Respuesta(b):\\(b) De i = 0 hasta 5 es la sumatoria es 3906
+}\\
+4. Sea $sumatoria = {v, w, x, y, z}$ y $A= U^6 n=1$ $sumatoria ^n$. ¿Cuántas cadenas de A tienen a xy como prefijo propio? \\
+\textcolor{blue}{Respuesta:\\De $i=1$ hasta 4 es la $sumatoria 5^i$
+}\\
+5. Si x pertenece a la  sumatoria de longitudes y $x^3=36$, ¿Cuánto vale el valor absoluto de x? \\
+\textcolor{red}{ Respuesta:\\$x = 12$
+}\\
+6. Sea M= (S, F, O, v, w) una máquina de estados finitos con f= 0 = {0, 1} y S, v y w determinados por el diagrama de estados:\\
+ a) Encuentre la salida para la cadena de entrada x= 0110111011\\
+b) Si partimos del estado s0 y la salida para la cadena de entrada x es 0000001, determine todas las posibilidades para x.\\
+c) Describa con palabras lo que hace esta máquina de estados finitos.\\ 
+\textcolor{red}{Respuesta:\\ a) Salida= 0000000010\\	b) w=(x ,s0) = 0000001 para x=(1)11111101; (2) 1111011; (3) 1110111; (4) 1101111; (5) 10111111; y (6) 01111111\\		C) Organiza a ocurrencia de 6 en el valor de x
+}\\
+7.Una máquina de estados finitos $M= (S, F, O, v, w)$ tiene $F= 0 = [0, 1]$ y se determina mediante el diagrama de estados que se muestra:\\
+Determine la cadena de salida para para la cadena de entrada 110111, comenzando en S0. ¿Cuál es el último estado de transición?\\
+\textcolor{red}{Respuesta:\\010110}\\
+8. Para la sumatoria de (w, x, y, z)
+determine el número de cadenas de la  sumatoria de longitud cinco (a) que comienzan con w; (b) con precisamente dos w; (c) sin w; (d) con un numero par de w. \\
+\textcolor{red}{Respuesta:\\Consideremos que la sumatoria contiene 4 terminos:\\ (a) $4^4$ \\
+(b) $C(5,2)(3^3)$\\
+(c) $3^5$ \\
+(d) $3^5$ + $C(5,2)(3^3)$ + $C(5,4)(3)$
+}\\
+9. La máquina M tiene f= [0, 1] = 0 y se determina mediante el diagrama de estados.\\
+a) Describa con palabras lo que hace esta máquina de estados finitos\\ 
+b) ¿Qué debe recordar el estado s1?\\
+c) Encuentre dos lenguajes A, B  f* tales que para cada x  AB, w(s0, x) tiene a 1 como un sufijo\\
+\textcolor{red}{Respuesta:\\a) Reorganiza (Con una salida de 1) todos los 0 que le preceden de otro 0
+}\\
+10. Sea  sumatoria un alfabeto. Sea xi $\in$ sumatoria para  1 $\leq$ i $\leq$ 100 (donde xi es diferente que xj, para cualquier  1 $\leq$ j $\leq$ 100). ¿Cuántas sub-cadenas no vacías existen para la cadena $s= x1x2...x100$?  \\
+\textcolor{red}{Respuesta:\\Hay 100 sub-cadenas de longitud 1, 99 sub-cadenas de longitud 2, 1 sub-cadena de longitud 100, así que tenemos 100 + 99 + ...+ 1 = De i=1 hasta 100 sumatoria de i = (100)(101)/2 =5050 sub-cadenas no vacías en total
+}\\
+\section{Capitulo 7}Relaciones: La segunda vuelta.\\
+1. Proporcione la demostración de la inclusión del teorema $7.1$\\
+\textcolor{red}{Respuesta:\\$(a,b) E (R1 o R2) o R3 -> (a,c) E R1 o R2, (c,d) E R3 de algún c E C -> (a,b) E R1, (b,c) E R2, (c,d) E R3 de algún b E B, c E C -> (a,b) E R1,(b,d) E R2 o R3-> (a,d) E R1 o (R2 o R3), y (R1 o R2) o R3  R1 o (R2 o R3)$
+}\\
+2. Sea  A un conjunto tal que $|A|$ = n y sea $\Re$ una relación sobre A antisimétrica. ¿Cuál es el máximo valor de $|\Re|$ ? ¿Cuántas relaciones antisimétricas pueden tener ese tamaño?\\
+\textcolor{red}{Respuesta:\\El numero de antisimétricas relacionadas que puede tener son de tamaño $2^{(n^2-n)/2}$ 
+}\\
+3. Cuantas matrices (0, 1) de 6 x 6 cumplen que A=a?\\
+\textcolor{red}{Respuesta:\\Aquí las palomas son los enteros 2 + 1 entre 0 y 2, inclusivo, y los casilleros son las 2 relaciones en A
+}\\
+4. Sea n $\in$ Z con n $\succ$ 1y sea Aa el conjunto de los divisores enteros positivos de n. Defina la relación $\Re$ sobre A como x$\Re$y si x divide (exactamente) a y. Determine la cantidad de pares ordenados que hay en la relación de $\Re$ cuando n es (a) 10; (b) 20; (c) 40; (d) 200; (e) 210.\\
+\textcolor{red}{Respuesta:\\C significa combinación\\ 
+(a) C(3,2)*C(3,2) = 9\\ 
+(b) C(4,2)*C(3,2) = 18\\
+(c) C(5,2)*C(3,2) = 30\\
+(d) C(5,2)*C(4,2) = 60\\ 
+(e) C$(3,2)^4$ = 81
+}\\
+5. Si A $=$ (1,2,3,4), dé un ejemplo de una relación $\Re $ sobre A que sea\\
+a) reflexiva y simétrica, pero no transitiva\\
+b) reflexiva y transitiva, pero no simétrica \\
+c) simétrica y transitiva, pero no reflexiva\\
+\textcolor{red}{Respuesta: \\
+(a) [(1,1),(2,2),(3,3),(4,4),(1,2),(2,1),(2,3),(3,2)]\\ 
+(b) [(1,1),(2,2),(3,3),(4,4),(1,2)]\\
+(c) [(1,1),(2,2),(1,2),(2,1)]
+}\\
+6. Para la relación $\Re$ del ejemplo 1 inciso (c) determine:\\
+a) Tres elementos f1, f2, f3 $\Re$ $\Re$ tales que 1 $\leq$ i $\leq$ 3\\
+b) Encuentre tres términos g1, g2, g3 $\Re$ $\Re$ tales que 1 $\leq$ i $\leq$ 3\\
+\textcolor{red}{ Respuesta:\\
+(a) Dejar f1, f2, f3 $\in$ F con $f1(n) = n+1$, $f2(n) = 5n$, y $f3(n) = 4n +1/n$ \\
+(b) Dejar g1, g2, g3 $\in$ F con $g1(n) = 3$, $g2(n) = 1/n$, y $g3(n) = sin(n)$
+}\\
+7. Para la relación (b) del ejemplo anterior determine cinco valores de x para los cuales (x $\in$ $\Re $.\\
+\textcolor{red}{Respuesta:\\-9, -2, 5, 12, 19
+}\\
+8. Si R es una relación reflexiva sobre un conjunto A, demuestre que R2 también es reflexiva sobre A. \\
+\textcolor{red}{Respuesta:\\$x E A reflexiva.->(x,x) E R. (x,x) E R,(x,x) E R->(x,x) E R o R=R^2$
+}\\
+9. Sea A un conjunto tal que $|A|$ = n y sea $\Re$ una relación de equivalencia sobre A tal que $|\Re|$ = r ¿Por qué r-n siempre es par?\\
+\textcolor{red}{Respuesta:\\
+Cuenta los elementos en $\Re$ de la forma (a,b), a$\neq$ b. Como $\Re$ es simétrica, r-n es par
+}\\
+10. Para una relación R sobre un conjunto A, defina R0 = {a, a)|a  A}. Si |A| = n, demuestre que existen s, t N, con 0  s  t  2, tales que R = R.\\
+\textcolor{red}{Respuesta:\\R1 o (R2 n R3)= R2 o {m,3),(m,4)}={(1,3),(1,4)}
+(R1 o R2) n (R1 o R3)= {(1,3),(1,4)} n {(1,3),(1,4) n (1,3),(1,4)} = {(1,3),(1,4)}
+}\\
+\section{Capitulo 8}El principio de inclusión y exclusión.\\
+1.  Determine el numero de positivos n,$ 1\leq n\leq 2000$,tales que\\
+a) No son divisibles entre 2,3,5 \\b) No son divisibles entre 2,3,5 ni 7 \\c) No son divisibles entre 2,3,5, pero si son divísales entre 7 \\ 
+\textcolor{red}{Respuesta (a):\\$N(c1)=[2000/2]=100\\N(c2)=[2000/3]=666\\N(c3)=[2000/5]=400\\N(c4)=[2000/7]=285\\N(c1,c2)=[2000/6]=333
+\\N(c2,c3)=[2000/15]=133\\N(c1,c3)=[2000/10]=200\\N(c1,c2,c3)=[2000/30]=66\\N(c1,c2,c3)=200-[1000+666+400]+[333+200+133]-66\\N(c1,c2,c3)=534$\\ 
+Respuesta (b):\\$N(c1,c4)=[2000/14]=142\\N(c3,c4)=[2000/35]=57\\N(c2,c4)=[2000/21]=95\\N(c1,c2,c4)=[2000/42]=47\\N(c2,c3,c4)=[2000/105]=19
+\\N(c1,c2,c3,c4)=2000-[1000+600+400+271]+[333+200+133+142+57+95]-[66+47+19]+9=586$\\
+Respuesta (c):\\$N(c4)=1715$
+}\\
+2. ¿De cuantas formas se puede colocar todas las letras de la palabra information de tal manera que ningún par de letras consecutiva aparezca más de una vez?
+[Aqui queremos contar disposiciones como iinnoofrmta y fortmaiinon, pero no inforinmota(donde "n" aparece dos veces) o nortfnoiami(donde "no" aparece dos veces)]\\
+\textcolor{red}{Respuesta:\\$N(c1)=9!\\N(c2)=9!\\N(c1,c2)=7!\\N(c1,c2)=11!-[9!+9!]+7!$
+}
+\\
+3. Encuentre el número de enteros positivos x tales que $x\leq 9999999$ y la suma de los dígitos de x sea igual a 31\\
+\textcolor{red}{ Respuesta:\\Como la suma debe de dar 31, entonces nuestro primera condición es $(37/31)$, de esto cabe que son 4 números que suman 37, entonces los siguientes 3 condiciones queda que $s2=(7/1)(27/21), s3=(7/2)(17/11)=(7/3)(7/1)$, por lo tanto el resultado seria el siguiente\\$N(c1,c2,c3)=s1-s2-s3-s4=(37/31)-(7/1)(27/21)+(7/2)(17/11)-(7/3)(7/3)$
+}
+\\
+4. En su tienda de flores, Margarita desea colocar 15 plantas diferentes en cinco anaqueles del escaparate,¿De cuántas formas puede colocarlas de tal manera que cada anaquel tenga al menos una planta, pero más de cuatro?\\
+\textcolor{red}{Respuesta:\\Como se quiere pasar de cuatro, nuestra máximo de condicionales es 3, por lo tanto el procedimiento seria el siguiente\\
+$(5/0)(14/0)-(5/4)(10/6)+(5/1)(6/2) donde (s/n)$ es el numero de anaqueles y los $(14/10),(10/6),(6/2)$ es el restante de platas a colocar, por lo tanto se multiplica con el factorial de 15.\\$(15!)[(14/10)(5/0)-(5/1)(10/6)-(5/2)(6/2)]$
+}
+\\
+5. Encuentre el número de permutaciones de a,b,c......,x,y,z, de modo que no aparezcan los patrones spin, game, path o net.\\
+\textcolor{red}{Respuesta:\\El numero total de letras en el abecedario es de 26, entonces el procedimiento es el siguiente.\\
+$26!-[3(23!)+24!]+(20!+21!)$
+}
+\\
+6. Si se tiran ocho dados distintos,¿Cuál es la probabilidad de que aparezcan seis números distintos?\\
+\textcolor{red}{Respuesta:\\Son 8 tiros y 6 distintos.Esto se plantea de la siguiente manera.\\$[(6/0)6^8-(6/1)5^8+(6/2)4^8+(6/3)3^8+(6/2)2^8-(6/1)1^8+(6/0)0^8]/6^8$
+}
+\\
+7. Para la situación de los ejemplos 8.6 y 8.7.calcule E, para $0\leq 1 \leq 5$ y muestra que $\sum E=N=151$\\
+\textcolor{red}{Resultado:\\Para $F0=768; E1=205; E2=40; E3=10; E4=0; E5=1$\\Entonces $\sum Ei=768+205+40+10+0+1=1024=N$
+}
+\\
+8. ¿De cuántas formas podemos colocar , las letras de correspondientes de modo que (a) no haya un par de letras idénticas consecutivas?(b) haya exactamente dos pares de letra idénticas consecutivas?(c)haya menos tres pares de letras idénticas consecutivas?\\
+\textcolor{red}{Respuesta(a):\\$(5/0)[14!/2(2!)^5]-(5/1)[13!/(2!)^4+(5/2)[12!/(2!)^3]-(5/3)[11!/(2!)^2]+(5/4)[10!/2!]-(5/5)[9!]$\\Respuesta(b):\\$E2=(5/2)[12!/(2!)^3]-(3/1)(5/3)[11!/(2!)^2]+(4/4)(5/4)[10!/2!]-(5/3)(5/5)*[9!]$\\Respuesta(c):\\
+$L3=(5/3)[11!/(2!)^2]-(3/2)(5/4)[10!/2!]+(4/2)(5/5)[9!]$
+}
+\\
+9. a)¿De cuántas formas se puede distribuir diez premios distintos entre cuatro estudiantes de modo que exactamente dos estudiantes no reciban ninguno?b)¿De cuántas formas puede hacerse esto de modo que al menos dos estudiantes no reciban premio?\\
+\textcolor{red}{Resultado(a):\\$E2=(2/0)[101/(2!)^2]+(2/1)[9!/(2!)^1+(2/2)[8!/(2!)^0]=6132$\\Resultado(b):\\$E2=(2/0)[10!/(2!)^2]-(2/1)[9!/(2!)^1]+
+(2/2)[8!/(2!)^0]=6136$
+}
+\\
+10. ¿De cuantas formas se pueden colocar los enteros 1,2,3,...,10 en una linea de modo que ningún entero par quede en su posición natural?\\
+\textcolor{red}{Esto se restringe a 5 formas, ya que un entero n se puede recorrer a $n+1$ y sucesivamente, y partiendo de 1, entonces $n+1=2$, por lo tanto son pares, $[10/2]=5$, por lo tanto lo siguiente es determinar cuantas formas se colocan.\\$(5/0)10!-(5/1)9!+(5/2)8!-(5/3)7!+(5/4)6!-(5/5)5!$
+}
 \end{document}
