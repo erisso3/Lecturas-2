@@ -1,0 +1,41 @@
+Arboles
+Un árbol es una estructura de datos ramificada (no lineal) que puede representarse como un conjunto de nodos enlazados entre sí por medio de ramas. La información contenida en un nodo puede ser de cualquier tipo simple o estructura de datos. Los árboles permiten modelar diversas entidades del mundo real tales como, por ejemplo, el índice de un libro, la clasificación del reino animal, el árbol genealógico de un apellido, etc.
+
+ 
+Una definición formal es la siguiente: Un árbol es una estructura de datos base que cumple una de estas dos condiciones: 
+•	Es una estructura vacía
+•	Es un nodo de tipo base que tiene de 0 a N subárboles disjuntos entre sí.
+ Al nodo base, que debe ser único, se le denomina raíz y se establece el convenio de representarlo gráficamente en la parte superior. En un árbol se representa una relación jerárquica a partir del nodo raíz en sentido vertical descendente, definiendo niveles1 . El nivel del nodo raíz es 1. Desde la raíz se puede llegar a cualquier nodo progresando por las ramas y atravesando los sucesivos niveles estableciendo así un camino. En imagen anetrior el nodo 7 está a nivel 3 y la secuencia de nodos 4, 8 y 11 constituye un (sub)camino. Se dice que un nodo es antecesor de otro cuando ambos forman parte de un camino y el primero se encuentra en un nivel superior (numeración más baja) al del segundo (numeración más alta). En el ejemplo anterior el nodo 4 es antecesor del 11. Por el contrario, el nodo 11 es descendiente del 4. La relación entre dos nodos separados de forma inmediata por una rama se denomina padre/hijo. En el ejemplo de la imagen anetrior, el nodo 5 es hijo del nodo 2 y, recíprocamente, el nodo 2 es padre del nodo 5. En un árbol un padre puede tener varios hijos pero un hijo solo puede tener un padre. Se denomina grado al número de hijos de un nodo. Por ejemplo, en la imagen aterior el nodo 4 tiene grado 3 y el nodo 7 tiene grado 0. Se dice que un nodo es hoja cuando no tiene descendientes (grado 0). 
+Se establecen los siguientes atributos para un árbol: 
+•	Altura / profundidad / nivel: La mayor altura / profundidad / nivel de sus nodos. La altura del árbol de la imagen anetrior es 4 (la alcanzan sus nodos 10, 11 y 12).
+•	Amplitud / Anchura: El número de nodos del nivel más poblado. En el ejemplo, 5 (nivel 3). 
+•	Grado: el mayor de los grados de los nodos. En el ejemplo, 3 (nodos 1 y 4).
+TEMINOLOGÍA
+Un nodo es una estructura que puede contener un valor o condición, o representar una estructura de datos separada (que puede llegar a ser un árbol). Cada nodo en un árbol tiene cero o más nodos hijo, que se disponen debajo de este en el árbol (por convenio, los árboles se dibujan de arriba a abajo). Un nodo que tiene un hijo se llama el nodo padre del hijo (o nodo superior). Todos los nodos tienen al menos un padre.
+Un nodo interno (también conocido como un nodo inferior o nodo rama) es cualquier nodo de un árbol que tiene nodos secundarios. De manera similar, un nodo externo(también conocido como un nodo exterior, nodo hoja, o nodo terminal) es cualquier nodo que no tiene nodos hijos.
+El nodo más alto en un árbol se llama el nodo raíz. Dependiendo de la definición, un árbol puede ser obligado a tener un nodo raíz (en cuyo caso ningún árbol estaría vacío), o que se les permita estar vacíos, en cuyo caso no necesariamente tienen un nodo raíz. Siendo el nodo superior, el nodo raíz no tendrá un padre. Es el nodo en el que los algoritmos comienzan, ya que, como estructura de datos que es, sólo se puede pasar de padres a hijos. Tenga en cuenta que algunos algoritmos comienzan en la raíz, pero primero visitan a los nodos hoja (acceden al valor de los nodos hoja), y acceden por último a la raíz (es decir, que acceden por primera vez a los hijos de la raíz, pero sólo acceder al valor de la raíz como último paso). Todos los demás nodos pueden ser accedidos siguiendo los brazos o enlaces. (En la definición formal, cada uno de esos caminos es único.) En los diagramas, el nodo raíz se extrae convencionalmente en la parte superior. En algunos árboles, tales como los montículos, el nodo raíz tiene propiedades especiales. Cada nodo en un árbol puede ser visto como el nodo raíz del subárbol con raíz en ese nodo.
+
+•	Raíz: El nodo superior de un árbol.
+•	Hijo: Un nodo conectado directamente con otro cuando se aleja de la raíz.
+•	Padre: La noción inversa de hijo.
+•	Hermanos: Un conjunto de nodos con el mismo padre.
+•	Descendiente: Un nodo accesible por descenso repetido de padre a hijo.
+•	Ancestro: Un nodo accesible por ascenso repetido de hijo a padre.
+•	Hoja: Un nodo sin hijos.
+•	Nodo interno: Un nodo con al menos un hijo.
+•	Grado: Número de subárboles de un nodo.
+•	Brazo: La conexión entre un nodo y otro.
+•	Camino: Una secuencia de nodos y brazos conectados con un nodo descendiente.
+•	Nivel: El nivel de un nodo se define por 1 + (el número de conexiones entre el nodo y la raíz).
+•	Altura de un nodo: La altura de un nodo es el número de aristas en el camino más largo entre ese nodo y una hoja.
+•	Altura de un árbol: La altura de un árbol es la altura de su nodo raíz.
+•	Profundidad: La profundidad de un nodo es el número de aristas desde la raíz del árbol hasta un nodo.
+•	Bosque: Un bosque es un conjunto de árboles n ≥ 0 disjuntos.
+•	Rama: Una ruta del nodo raíz a cualquier otro nodo.
+
+ÁRBOLES BINARIOS
+ Se definen como árboles de grado 2. Esto es, cada nodo puede tener dos, uno o ningún hijo. Al tratarse como mucho de dos hijos, cada uno de ellos puede identificarse como hijo izquierdo o hijo derecho.
+ÁRBOLES BINARIOS DE BÚSQUEDA
+Un árbol binario de búsqueda es un tipo de árbol binario en el que se verifica para todo nodo que las claves de su subárbol izquierdo son menores que las de dicho nodo y las claves de su subárbol derecho son mayores.
+UTILIZACIÓN DE UN TAD ÁRBOL
+Los algoritmos explicados en las secciones anteriores implican el conocimiento interno de la estructura del árbol binario. Otro tanto podría haberse hecho en caso de que el árbol se hubiera implementado mediante cualquier otra alternativa posible. Otra opción consiste en que el programador dispusiera de un Tipo Abstracto de Datos del que, dada su característica de ocultamiento, se desconoce absolutamente su implementación y, en consecuencia, solo es posible disponer de sus funcionalidades mediante un conjunto de especificaciones.
